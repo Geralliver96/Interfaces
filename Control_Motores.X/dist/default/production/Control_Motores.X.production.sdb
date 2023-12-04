@@ -1,0 +1,632 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4550 ]
+[d frameptr 4065 ]
+"7 C:\Users\gerar\MPLABXProjects\Control_Motores.X\ADC_Source_File.c
+[v _ADC_Init ADC_Init `(v  1 e 1 0 ]
+"16
+[v _ADC_Read ADC_Read `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\flge.c
+[v ___flge __flge `(b  1 e 0 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\flneg.c
+[v ___flneg __flneg `(d  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"43 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"9 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"13 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\roundf.c
+[v _roundf roundf `(f  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+"12 C:\Users\gerar\MPLABXProjects\Control_Motores.X\libuart4550.c
+[v _uartInit uartInit `(v  1 e 1 0 ]
+"36
+[v _uartTransmitter uartTransmitter `(v  1 e 1 0 ]
+"60
+[v _uartPrint uartPrint `(v  1 e 1 0 ]
+"68
+[v _sendUART sendUART `(v  1 e 1 0 ]
+"51 C:\Users\gerar\MPLABXProjects\Control_Motores.X\PIC_DC_Motor.c
+[v _PWM_Init PWM_Init `(v  1 e 1 0 ]
+"57
+[v _setPeriodTo setPeriodTo `(i  1 e 2 0 ]
+"88
+[v _SetDutyCycleTo SetDutyCycleTo `(v  1 e 1 0 ]
+"97
+[v _configTimer0 configTimer0 `(v  1 e 1 0 ]
+"109
+[v _configurar configurar `(v  1 e 1 0 ]
+"119
+[v _isr isr `IIH(v  1 e 1 0 ]
+"126
+[v _main main `(v  1 e 1 0 ]
+"3427 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+[s S269 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"3657
+[s S278 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+[u S287 . 1 `S269 1 . 1 0 `S278 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES287  1 e 1 @3987 ]
+[s S106 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"3875
+[s S113 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+[u S120 . 1 `S106 1 . 1 0 `S113 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES120  1 e 1 @3988 ]
+"4001
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+[s S657 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 SPPIF 1 0 :1:7 
+]
+"4492
+[s S666 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 PSPIF 1 0 :1:7 
+]
+[u S672 . 1 `S657 1 . 1 0 `S666 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES672  1 e 1 @3998 ]
+[s S485 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"4977
+[s S494 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 ADEN 1 0 :1:3 
+]
+[s S497 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 SRENA 1 0 :1:5 
+]
+[s S500 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC8_9 1 0 :1:6 
+]
+[s S503 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC9 1 0 :1:6 
+]
+[s S506 . 1 `uc 1 RCD8 1 0 :1:0 
+]
+[u S508 . 1 `S485 1 . 1 0 `S494 1 . 1 0 `S497 1 . 1 0 `S500 1 . 1 0 `S503 1 . 1 0 `S506 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES508  1 e 1 @4011 ]
+[s S557 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"5185
+[s S566 . 1 `uc 1 TX9D1 1 0 :1:0 
+`uc 1 TRMT1 1 0 :1:1 
+`uc 1 BRGH1 1 0 :1:2 
+`uc 1 SENDB1 1 0 :1:3 
+`uc 1 SYNC1 1 0 :1:4 
+`uc 1 TXEN1 1 0 :1:5 
+`uc 1 TX91 1 0 :1:6 
+`uc 1 CSRC1 1 0 :1:7 
+]
+[s S575 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 TX8_9 1 0 :1:6 
+]
+[s S578 . 1 `uc 1 TXD8 1 0 :1:0 
+]
+[u S580 . 1 `S557 1 . 1 0 `S566 1 . 1 0 `S575 1 . 1 0 `S578 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES580  1 e 1 @4012 ]
+"5402
+[v _TXREG TXREG `VEuc  1 e 1 @4013 ]
+"5414
+[v _RCREG RCREG `VEuc  1 e 1 @4014 ]
+"5426
+[v _SPBRG SPBRG `VEuc  1 e 1 @4015 ]
+[s S609 . 1 `uc 1 ABDEN 1 0 :1:0 
+`uc 1 WUE 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 BRG16 1 0 :1:3 
+`uc 1 TXCKP 1 0 :1:4 
+`uc 1 RXDTP 1 0 :1:5 
+`uc 1 RCIDL 1 0 :1:6 
+`uc 1 ABDOVF 1 0 :1:7 
+]
+"6098
+[s S618 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 SCKP 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 RCMT 1 0 :1:6 
+]
+[s S623 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 RXCKP 1 0 :1:5 
+]
+[s S626 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 W4E 1 0 :1:1 
+]
+[u S629 . 1 `S609 1 . 1 0 `S618 1 . 1 0 `S623 1 . 1 0 `S626 1 . 1 0 ]
+[v _BAUDCONbits BAUDCONbits `VES629  1 e 1 @4024 ]
+"6327
+[v _CCP1CON CCP1CON `VEuc  1 e 1 @4029 ]
+"6496
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @4030 ]
+"6510
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @4032 ]
+"6581
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"6666
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @4034 ]
+[s S32 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_NOT_DONE 1 0 :1:1 
+]
+"6710
+[s S35 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :4:2 
+]
+[s S39 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_DONE 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+]
+[s S46 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 DONE 1 0 :1:1 
+]
+[s S49 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+]
+[s S52 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_DONE 1 0 :1:1 
+]
+[s S55 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[s S58 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GODONE 1 0 :1:1 
+]
+[u S61 . 1 `S32 1 . 1 0 `S35 1 . 1 0 `S39 1 . 1 0 `S46 1 . 1 0 `S49 1 . 1 0 `S52 1 . 1 0 `S55 1 . 1 0 `S58 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES61  1 e 1 @4034 ]
+"6792
+[v _ADRESL ADRESL `VEuc  1 e 1 @4035 ]
+"6799
+[v _ADRESH ADRESH `VEuc  1 e 1 @4036 ]
+"7200
+[v _T2CON T2CON `VEuc  1 e 1 @4042 ]
+[s S148 . 1 `uc 1 T2CKPS 1 0 :2:0 
+`uc 1 TMR2ON 1 0 :1:2 
+`uc 1 TOUTPS 1 0 :4:3 
+]
+"7228
+[s S152 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+`uc 1 T2CKPS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 T2OUTPS0 1 0 :1:3 
+`uc 1 T2OUTPS1 1 0 :1:4 
+`uc 1 T2OUTPS2 1 0 :1:5 
+`uc 1 T2OUTPS3 1 0 :1:6 
+]
+[s S160 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 TOUTPS0 1 0 :1:3 
+`uc 1 TOUTPS1 1 0 :1:4 
+`uc 1 TOUTPS2 1 0 :1:5 
+`uc 1 TOUTPS3 1 0 :1:6 
+]
+[u S166 . 1 `S148 1 . 1 0 `S152 1 . 1 0 `S160 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES166  1 e 1 @4042 ]
+"7298
+[v _PR2 PR2 `VEuc  1 e 1 @4043 ]
+"7408
+[v _TMR2 TMR2 `VEuc  1 e 1 @4044 ]
+"7986
+[v _OSCCON OSCCON `VEuc  1 e 1 @4051 ]
+"8069
+[v _T0CON T0CON `VEuc  1 e 1 @4053 ]
+[s S191 . 1 `uc 1 T0PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 T08BIT 1 0 :1:6 
+`uc 1 TMR0ON 1 0 :1:7 
+]
+"8089
+[s S198 . 1 `uc 1 T0PS0 1 0 :1:0 
+`uc 1 T0PS1 1 0 :1:1 
+`uc 1 T0PS2 1 0 :1:2 
+]
+[u S202 . 1 `S191 1 . 1 0 `S198 1 . 1 0 ]
+[v _T0CONbits T0CONbits `VES202  1 e 1 @4053 ]
+"8146
+[v _TMR0L TMR0L `VEuc  1 e 1 @4054 ]
+"8153
+[v _TMR0H TMR0H `VEuc  1 e 1 @4055 ]
+[s S309 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 NOT_RBPU 1 0 :1:7 
+]
+"8532
+[s S312 . 1 `uc 1 RBIP 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 TMR0IP 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INTEDG2 1 0 :1:4 
+`uc 1 INTEDG1 1 0 :1:5 
+`uc 1 INTEDG0 1 0 :1:6 
+`uc 1 nRBPU 1 0 :1:7 
+]
+[s S321 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IP 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 RBPU 1 0 :1:7 
+]
+[u S326 . 1 `S309 1 . 1 0 `S312 1 . 1 0 `S321 1 . 1 0 ]
+[v _INTCON2bits INTCON2bits `VES326  1 e 1 @4081 ]
+[s S220 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"8614
+[s S229 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S238 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S242 . 1 `S220 1 . 1 0 `S229 1 . 1 0 `S238 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES242  1 e 1 @4082 ]
+"8982
+[v _ADON ADON `VEb  1 e 0 @32272 ]
+"9753
+[v _GO GO `VEb  1 e 0 @32273 ]
+"9987
+[v _LATD0 LATD0 `VEb  1 e 0 @31840 ]
+"9990
+[v _LATD1 LATD1 `VEb  1 e 0 @31841 ]
+"10815
+[v _TMR0IF TMR0IF `VEb  1 e 0 @32658 ]
+"37 C:\Users\gerar\MPLABXProjects\Control_Motores.X\PIC_DC_Motor.c
+[v _contador_pulsos contador_pulsos `i  1 e 2 0 ]
+"126
+[v _main main `(v  1 e 1 0 ]
+{
+"133
+[v main@mensaje mensaje `[28]uc  1 a 28 0 ]
+"160
+[v main@tiempo tiempo `f  1 a 4 98 ]
+"156
+[v main@Control Control `f  1 a 4 94 ]
+"146
+[v main@Kd Kd `f  1 a 4 90 ]
+"128
+[v main@Duty_Scale Duty_Scale `f  1 a 4 86 ]
+"154
+[v main@Error_0 Error_0 `f  1 a 4 82 ]
+"149
+[v main@Error Error `f  1 a 4 78 ]
+"144
+[v main@Kp Kp `f  1 a 4 74 ]
+"155
+[v main@Error_1 Error_1 `f  1 a 4 70 ]
+"162
+[v main@RPM RPM `f  1 a 4 44 ]
+"161
+[v main@rad rad `f  1 a 4 40 ]
+"157
+[v main@Control_0 Control_0 `f  1 a 4 36 ]
+"145
+[v main@Ki Ki `f  1 a 4 32 ]
+"159
+[v main@pwm_duty pwm_duty `f  1 a 4 28 ]
+"129
+[v main@Period Period `i  1 a 2 68 ]
+"132
+[v main@F3997 F3997 `[28]uc  1 s 28 F3997 ]
+"201
+} 0
+"60 C:\Users\gerar\MPLABXProjects\Control_Motores.X\libuart4550.c
+[v _uartPrint uartPrint `(v  1 e 1 0 ]
+{
+"61
+[v uartPrint@index index `i  1 a 2 3 ]
+"60
+[v uartPrint@string string `*.39uc  1 p 2 1 ]
+"66
+} 0
+"36
+[v _uartTransmitter uartTransmitter `(v  1 e 1 0 ]
+{
+[v uartTransmitter@dataTrasmit dataTrasmit `uc  1 a 1 wreg ]
+[v uartTransmitter@dataTrasmit dataTrasmit `uc  1 a 1 wreg ]
+"38
+[v uartTransmitter@dataTrasmit dataTrasmit `uc  1 a 1 0 ]
+"46
+} 0
+"12
+[v _uartInit uartInit `(v  1 e 1 0 ]
+{
+"34
+} 0
+"57 C:\Users\gerar\MPLABXProjects\Control_Motores.X\PIC_DC_Motor.c
+[v _setPeriodTo setPeriodTo `(i  1 e 2 0 ]
+{
+"62
+[v setPeriodTo@_resolution _resolution `ul  1 a 4 58 ]
+"61
+[v setPeriodTo@period period `f  1 a 4 54 ]
+"62
+[v setPeriodTo@FOSC FOSC `ul  1 a 4 48 ]
+"59
+[v setPeriodTo@clockSelectBits clockSelectBits `i  1 a 2 52 ]
+"60
+[v setPeriodTo@TimerPrescaleValue TimerPrescaleValue `i  1 a 2 46 ]
+"59
+[v setPeriodTo@TimerPrescaleBits TimerPrescaleBits `i  1 a 2 44 ]
+"57
+[v setPeriodTo@FPWM FPWM `ul  1 p 4 35 ]
+"85
+} 0
+"13 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\roundf.c
+[v _roundf roundf `(f  1 e 4 0 ]
+{
+"17
+[v roundf@y y `f  1 a 4 31 ]
+[u S1225 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+"15
+[v roundf@u u `S1225  1 a 4 22 ]
+"17
+[v roundf@z z `f  1 a 4 16 ]
+"16
+[v roundf@e e `i  1 a 2 20 ]
+"18
+[v roundf@sign sign `a  1 a 1 30 ]
+"13
+[v roundf@x x `f  1 p 4 90 ]
+"14
+[v roundf@F522 F522 `S1225  1 s 4 F522 ]
+"43
+} 0
+"245 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+[v ___flsub __flsub `(d  1 e 4 0 ]
+{
+[v ___flsub@b b `d  1 p 4 0 ]
+[v ___flsub@a a `d  1 p 4 4 ]
+"250
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\flneg.c
+[v ___flneg __flneg `(d  1 e 4 0 ]
+{
+[v ___flneg@f1 f1 `d  1 p 4 0 ]
+"20
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\flge.c
+[v ___flge __flge `(b  1 e 0 0 ]
+{
+[v ___flge@ff1 ff1 `d  1 p 4 0 ]
+[v ___flge@ff2 ff2 `d  1 p 4 4 ]
+"19
+} 0
+"68 C:\Users\gerar\MPLABXProjects\Control_Motores.X\libuart4550.c
+[v _sendUART sendUART `(v  1 e 1 0 ]
+{
+[v sendUART@data data `uc  1 a 1 wreg ]
+[v sendUART@data data `uc  1 a 1 wreg ]
+[v sendUART@data data `uc  1 a 1 0 ]
+"76
+} 0
+"109 C:\Users\gerar\MPLABXProjects\Control_Motores.X\PIC_DC_Motor.c
+[v _configurar configurar `(v  1 e 1 0 ]
+{
+"117
+} 0
+"97
+[v _configTimer0 configTimer0 `(v  1 e 1 0 ]
+{
+"107
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 6 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 5 ]
+[v ___awdiv@counter counter `uc  1 a 1 4 ]
+"7
+[v ___awdiv@dividend dividend `i  1 p 2 0 ]
+[v ___awdiv@divisor divisor `i  1 p 2 2 ]
+"41
+} 0
+"88 C:\Users\gerar\MPLABXProjects\Control_Motores.X\PIC_DC_Motor.c
+[v _SetDutyCycleTo SetDutyCycleTo `(v  1 e 1 0 ]
+{
+"90
+[v SetDutyCycleTo@PWM10BitValue PWM10BitValue `i  1 a 2 10 ]
+"88
+[v SetDutyCycleTo@Duty_Scale Duty_Scale `f  1 p 4 0 ]
+[v SetDutyCycleTo@Period Period `i  1 p 2 4 ]
+"95
+} 0
+"10 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 20 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 19 ]
+"10
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 10 ]
+"15
+[v ___xxtofl@sign sign `uc  1 a 1 18 ]
+"44
+} 0
+"43 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 9 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 8 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 0 ]
+"70
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+{
+[s S1055 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+"13
+[s S1060 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
+[u S1063 . 4 `l 1 i 4 0 `d 1 f 4 0 `S1055 1 fAsBytes 4 0 `S1060 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S1063  1 a 4 59 ]
+"12
+[v ___flmul@grs grs `ul  1 a 4 53 ]
+[s S1131 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+"14
+[u S1134 . 2 `s 1 i 2 0 `us 1 n 2 0 `S1131 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S1134  1 a 2 63 ]
+"10
+[v ___flmul@bexp bexp `uc  1 a 1 58 ]
+"11
+[v ___flmul@aexp aexp `uc  1 a 1 57 ]
+"9
+[v ___flmul@sign sign `uc  1 a 1 52 ]
+"8
+[v ___flmul@b b `d  1 p 4 40 ]
+[v ___flmul@a a `d  1 p 4 44 ]
+"205
+} 0
+"11 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+{
+"21
+[v ___fldiv@grs grs `ul  1 a 4 84 ]
+"22
+[v ___fldiv@rem rem `ul  1 a 4 77 ]
+"20
+[v ___fldiv@new_exp new_exp `s  1 a 2 82 ]
+"19
+[v ___fldiv@aexp aexp `uc  1 a 1 89 ]
+"18
+[v ___fldiv@bexp bexp `uc  1 a 1 88 ]
+"16
+[v ___fldiv@sign sign `uc  1 a 1 81 ]
+"11
+[v ___fldiv@b b `d  1 p 4 65 ]
+[v ___fldiv@a a `d  1 p 4 69 ]
+"185
+} 0
+"10 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+{
+"17
+[v ___fladd@grs grs `uc  1 a 1 39 ]
+"15
+[v ___fladd@bexp bexp `uc  1 a 1 38 ]
+"16
+[v ___fladd@aexp aexp `uc  1 a 1 37 ]
+"13
+[v ___fladd@signs signs `uc  1 a 1 36 ]
+"10
+[v ___fladd@b b `d  1 p 4 24 ]
+[v ___fladd@a a `d  1 p 4 28 ]
+"237
+} 0
+"51 C:\Users\gerar\MPLABXProjects\Control_Motores.X\PIC_DC_Motor.c
+[v _PWM_Init PWM_Init `(v  1 e 1 0 ]
+{
+"55
+} 0
+"16 C:\Users\gerar\MPLABXProjects\Control_Motores.X\ADC_Source_File.c
+[v _ADC_Read ADC_Read `(i  1 e 2 0 ]
+{
+[v ADC_Read@channel channel `uc  1 a 1 wreg ]
+[v ADC_Read@channel channel `uc  1 a 1 wreg ]
+"18
+[v ADC_Read@channel channel `uc  1 a 1 6 ]
+"22
+} 0
+"7
+[v _ADC_Init ADC_Init `(v  1 e 1 0 ]
+{
+"14
+} 0
+"119 C:\Users\gerar\MPLABXProjects\Control_Motores.X\PIC_DC_Motor.c
+[v _isr isr `IIH(v  1 e 1 0 ]
+{
+"124
+} 0
